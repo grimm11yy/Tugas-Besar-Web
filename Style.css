@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    background-color: #121212;
+}
+
+.navbar {
+    padding-bottom: 0;
+}
+
+.container-fluid {
+    background-color: #121212;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.container-fluid a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid .nav-item {
+    background-color: #121212;
+}
+
+.navbar .container-fluid a:hover,
+.navbar .container-fluid a:active {
+    background: #fff;
+    color: #2b1055;
+}
+
+.container-fluid .logo {
+    max-width: 250px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.container-fluid .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.container-fluid .dropdown-menu {
+    background-color: #303030;
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1;
+    border-color: #fff
+}
+
+.container-fluid .dropdown-item {
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar .container-fluid .dropdown-item:hover,
+.navbar .container-fluid .dropdown-item:active {
+    background: #202020;
+    color: #fff;
+}
+
+
+.container-fluid .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid .navbar-toggler{
+    margin-right: 30px;
+    border: 1;
+    border-color: #fff;
+}
+
+.navbar-collapse .d-flex {
+    width: 100%;
+    height: 45px;
+    background: #252525;
+    color: #fff;
+    padding: 6px 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    border-color: #fff;
+    border: 1;
+    border-radius: 50px;
+}
+
+.navbar-collapse .form-control {
+    width: 100%;
+    height: 35px;
+    background: #252525;
+    color: #fff;
+    padding: 6px 12px;
+    padding-right: 30px;
+    font-size: 14px;
+    border-color: #fff;
+    border: 1;
+    border-radius: 50px;
+}
+
+.navbar-collapse button {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    padding-bottom: 3px;
+    font-size: 14px;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 50px;
+}
