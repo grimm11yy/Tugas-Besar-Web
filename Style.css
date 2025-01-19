@@ -15,6 +15,8 @@
     background: url("Asset/1299.jpg") #000 no-repeat center;
 }
 
+/* Navbar #1012403 */
+
 .navbar {
     padding-bottom: 0;
 }
@@ -34,6 +36,10 @@
     border-radius: 20px;
     padding: 10px;
     font-family: "Poppins", sans-serif;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .navbar .container-fluid .nav-item {
@@ -87,6 +93,10 @@
     border-radius: 20px;
     padding: 10px;
     font-family: "Poppins", sans-serif;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .navbar .container-fluid .navbar-toggler{
@@ -107,6 +117,10 @@
     border-color: #fff;
     border: 1;
     border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .navbar .container-fluid .navbar-collapse .form-control {
@@ -120,6 +134,10 @@
     border-color: #fff;
     border: 1;
     border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .navbar .container-fluid .navbar-collapse button {
@@ -131,6 +149,10 @@
     color: #fff;
     border-color: #fff;
     border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .navbar .container-fluid .navbar-collapse button:hover,
@@ -139,97 +161,28 @@
     color: #8c00ff;
 }
 
+/* End Navbar #10124903 */
+
+/*Header #10124903 */
+
 .carousel {
-    background-color: #000000;
-    position: relative;
-    padding: 50px;
-}
-
-.carousel a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.carousel .row1 {
-    text-decoration: none;
-}
-
-.carousel .text-center {
-    color: #fff;
-    padding-bottom: 50px;
-    font-family: "Poppins", sans-serif;
+    display: flex;
+    padding: auto;
 }
 
 .carousel-inner {
-    font-size: 100px;
-    position: relative;
-    align-items: center;
-    position: relative;
-}
-
-.carousel-item .set-box {
-    margin-left: 170px;
-    margin-right: 80px;
-    width: 900px;
-    text-shadow: 0 5px 10px #000;
-    border-radius: 30px;
-    color: #fff;
-}
-
-.carousel-item .set-box figure {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.carousel-item .set-box figure h4 {
-    border: 1;
-    background-color: #6e00b8;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    border-radius: 30px;
-}
-
-.carousel-item .set-box figure figcaption {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .carousel-item {
-    font-size: 100px;
-    position: relative;
-    font-size: 12px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
 }
-
-.carousel-item .series-box {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    padding-top: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.carousel-item .series-content .series-chapter {
-    font-family: "Poopins", sans-serif;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40%;
-    padding-right: 40%;
-    padding-top: 7px;
-
-}
-
-.carousel-item .card-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .carousel-item .image {
     display: flex;
@@ -238,106 +191,309 @@
     width: 100%;
 }
 
-.carousel-item .title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    line-height: 3.5rem;
-    margin-bottom: 0.2rem;
+.carousel .carousel-indicators {
+    margin: 0;
 }
 
-.carousel-item .sinopsis {
+/* End Header #10124903 */
+
+/* Klise #10124903*/
+
+.trending {
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 450;
-    text-transform: uppercase;
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-.container {
-    color: #fff;
-    align-items: center;
-    background-color: #000000;
     display: flex;
-    max-width: 1400px;
-    padding: 10;
-    border: 1;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+    padding-top: 100px;
 }
 
-.row {
-    color: #fff;
-    justify-content: center;
+.banner {
+    width: 100%;
+    height: 120vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 40s linear infinite;
+    -webkit-animation: autoRun 40s linear infinite;
+}
+@keyframes autoRun {
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+}to{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+}
+}
+
+.banner .slider .item {
+    width: 220px;
+    height: 300px;
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:         
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))            
+        translateZ(550px);
+}
+
+.banner .slider .item img {
+    width: 220px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.banner .content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100pv);
+    height: max-content;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    height: 550px;
-    margin-top: 100px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.row a {
-    text-decoration: none;
-}
-
-.row h1 {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-}
-
-.container .col-auto {
-    background-color: #000;
-    align-items: center;
-    flex-direction: column;
-    font-size: 17px;
-    font-weight: 700;
-    height: 400px;
-    width: 220px;
-    padding: 10px 9px;
-    padding-left: 7px;
     justify-content: space-between;
-    border-radius: 8px;
-}
-
-.container .col-auto .card {
-    background-color: #000;
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
+/* END klise #10124903 */
 
-.container .col-auto .series-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 8px;
-}
-
-.container .col-auto .series-box a {
-    font-size: 17px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.container .col-auto .series-content {
+/* Rekomendasi manga #10124903 */
+.rekomendasi {
     font-family: "Poppins", sans-serif;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    font-size: 12px;
-    padding: 8px;
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+    padding-top: 100px;
 }
 
-.container .col-auto .series-chapter {
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-decoration: none;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: 5px;
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
 }
+
+.direction {
+    text-align: center;
+}
+
+.direction button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color:#fff;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.direction button:hover {
+    background-color: #2b1055;
+}
+
+.item {
+    border-radius: 15px;
+    width:300px;
+    height:600px;
+    background-color: #000;
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+}
+
+.item .avatar {
+    display: block;
+    margin: 50px auto 10px;
+    width: 240px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.item .content {
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #353535;
+
+}
+.item .content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.item .content table td{
+    color: #fff;
+    padding: 1px;
+}
+.item .content table td:nth-child(2){
+    text-align: right;
+}
+.item .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.item .chapter {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+
+}
+.item .genre {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#list {
+    display: flex;
+    width: max-content;
+}
+
+#formList {
+    width: 1200px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 100px auto 10px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+
+#formList::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .item{
+        width: calc(33.3vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .item{
+        width: calc(50vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+
+/* End Rekomendasi */
+
+/* Rilis baru #10124903 */
+
+.rilis-baru {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+}
+
+.container2 {
+    font-family: "Poopins", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.container2 a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.container2 .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container2 .row .col {
+    width: auto;
+}
+
+.container2 .row .col .card {
+    background-color: #000;
+    margin-top: 40px;
+}
+
+.item .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.item .chapter {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.container2 .row .col .series-box {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container2 .row .col .series-chapter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color: #000;
+    border: 1;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.container2 .row .col .series-chapter span {
+    background-color: #000;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: -50px;
+}
+.pagination a{
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: hwb(0 97% 0%);
+}
+.pagination a.active {
+    background-color: #2b1055;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+
+/* End Rilis baru */
