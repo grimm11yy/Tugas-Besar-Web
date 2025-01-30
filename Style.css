@@ -14,6 +14,80 @@
     min-height: 100vh;
     background: url("Asset/1299.jpg") #000 no-repeat center;
 }
+/* Login */
+.formbox {
+    width: 470px;
+    height: 350px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+    margin: auto auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.formbox .content {
+    font-family: 'Poppins', sans-serif;
+    color: #cecece;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formbox .content .logo {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+}
+.formbox .mb-3 {
+    color: #fff;
+}
+.formbox .mb-3 .form-control {
+    background-color: #000;
+    color: #fff;
+}
+.formbox .mb-3 .form-label {
+    font-size: 15px;
+    color: #cecece;
+}
+.formbox .mb-3 .form-check-label {
+    background-color: #291561;
+    font-size: 12px;
+}
+.formbox .mb-3 .form-check-input {
+    border-color: #fff;
+    color: #fff;
+    background-color: #000;
+}
+.formbox button {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+.formbox button:hover,
+.formbox button:focus {
+    background-color: #cecece;
+    color: #000;
+}
+.formbox .daftar {
+    padding: 15px;
+    color: #cecece;
+    text-align: center;
+}
+.formbox a {
+    margin-left: 8px;
+    color: #cecece;
+    text-decoration: none;
+}
+.formbox a:hover,
+.formbox a:focus {
+    color: #fff;
+}
+.formbox .back {
+    color: #cecece;
+    text-align: center;
+}
+/* End Login */
 
 /* Navbar #1012403 */
 
@@ -70,6 +144,7 @@
     background-color: #000;
     color: #fff;
     padding: 10px;
+    margin-left: -10px;
 }
 
 .navbar .container-fluid .dropdown-menu:hover,
@@ -244,7 +319,7 @@
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 60px;
+    padding: 0px;
     padding-top: 100px;
 }
 
@@ -267,6 +342,7 @@ body {
     border: none;
     border-radius: 50%;
     margin: 0 10px;
+    margin-top: -150px;
     transition: 0.5s;
 }
 
@@ -278,19 +354,18 @@ body {
 .item {
     border-radius: 15px;
     width:300px;
-    height:600px;
-    background-color: #000;
+    height:550px;
     overflow: hidden;
     transition: 0.5s;
-    margin:10px;
+    margin:0px;
     scroll-snap-align: start;
 }
 
 .item .avatar {
     display: block;
     margin: 50px auto 10px;
-    width: 240px;
-    height: 340px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -372,8 +447,118 @@ body {
 
 /* End Rekomendasi #10124903 */
 
+/* Trending #10124903 */
+.trending {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+    padding-top: 100px;
+}
+.container {
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    max-width: 1400px;
+    padding: 10;
+    border: 1;
+}
+.container a {
+    color: #cecece;
+    text-decoration: none;
+}
+.container a:hover,
+.container a:active {
+    color: #fff;
+}
+.container .row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.container .row .col-auto {
+    font-size: 17px;
+    font-weight: 700;
+    height: 400px;
+    width: 224px;
+    padding: 10px 9px;
+    justify-content: space-between;
+}
+.container .row .col-auto .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 270px;
+    margin-left: 12px;
+}
+.container .row .col-auto img {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 270px;
+}
+.container .row .col-auto .series-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    font-size: 16px;
+}
+.container .row .col-auto .series-content {
+    color: #cecece;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container .row .col-auto .series-content .series-chapter {
+    margin-left: 4px;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 5px;
+}
+.container .row .col-auto .series-content .series-chapter .series-badge {
+    font-size: 13px;
+}
+.container .row .col-auto .series-content .series-chapter .series-date {
+    font-size: 11px;
+}
+.popular {
+    font-family: "Poppins", sans-serif;
+    margin-left: 100px;
+    margin-right: 947px;
+}
+.popular .nav button {
+    color: #cecece;
+    background-color: #000;
+}
+.popular .nav button:hover,
+.popular .nav button:active {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Trending #10124903 */
+
 /* Rilis baru #10124903 */
 
+.tab-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
 .rilis-baru {
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -394,11 +579,14 @@ body {
 }
 
 .container2 a {
-    color: #fff;
+    color: #cecece;
     text-decoration: none;
     margin-top: 30px;
 }
-
+.container2 a:hover,
+.container2 a:active {
+    color: #fff;
+}
 .container2 .row {
     display: flex;
     justify-content: center;
@@ -442,11 +630,15 @@ body {
     -o-border-radius: 8px;
 }
 .container2 .row .col .series-chapter .series-badge {
-    background-color: #ffffff;
-    color: black;
+    background-color: #a80250;
+    color: #cecece;
     padding: 3px;
 }
-
+.container2 .row .col .series-chapter .series-badge:hover,
+.container2 .row .col .series-chapter .series-badge:active {
+    background-color: #000000;
+    color: #fff;
+}
 .container2 .row .col .series-chapter .series-date {
     font-size: 11px;
     color: aliceblue;
