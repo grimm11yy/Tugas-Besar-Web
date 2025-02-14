@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000000;
     scroll-behavior: smooth;
 }
 body, html {
@@ -152,12 +151,6 @@ body, html {
     margin-left: -10px;
 }
 
-.navbar .container-fluid .dropdown-menu:hover,
-.navbar .container-fluid .dropdown-menu:active {
-    color: #fff;
-}
-
-
 .navbar .container-fluid .nav-link {
     color: #cecece;
     text-decoration: none;
@@ -212,6 +205,11 @@ body, html {
     border-radius: 50px;
 }
 
+.navbar .container-fluid .navbar-collapse button :hover,
+.navbar .container-fluid .navbar-collapse button :focus {
+    background: #ffffff;
+    color: #000;
+}
 /* End Navbar #10124903 */
 
 /*Header #10124903 */
@@ -378,7 +376,6 @@ body {
     font-family: "Poppins", sans-serif;
     margin-left: 30px;
     margin-right: 30px;
-    background-color: #353535;
 
 }
 .item .content a {
@@ -540,8 +537,9 @@ body {
 }
 .popular {
     font-family: "Poppins", sans-serif;
-    margin-left: 100px;
-    margin-right: 956px;
+    display: flex;
+    text-align: center;
+    margin-left: 23px;
 }
 .popular .nav button {
     color: #cecece;
@@ -609,8 +607,10 @@ body {
 }
 
 .container2 .row .col .series-box {
+    width: 200px;
+    height: 50px;
     padding-top: 7px;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
 }
 .container2 .row .col .series-content {
@@ -668,6 +668,18 @@ body {
 /* End Rilis baru #10124903 */
 
 /* Daftar komik #10124903 */
+@media only screen and (max-width: 768px) {
+    .container3 .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .navbar .container-fluid {
+        flex-direction: column;
+    }
+    .navbar .container-fluid a {
+        margin: 10px 0;
+    }
+}
 .dafkomik {
     font-family: "Poppins", sans-serif;
     margin-top: 50px;
@@ -825,6 +837,124 @@ body {
     color: #fff;
 }
 /* End Daftar Komik #10124903 */
+
+/* Halaman Komik #10124903 */
+.container4 {
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: -10px;
+}
+
+.container4 .row h5 {
+    color: #fff;
+}
+
+.container4 .row .col-7 a {
+    color: #cecece;
+    text-decoration: none;
+}
+
+.container4 .row .col-7 a:hover,
+.container4 .row .col-7 a:active {
+    color: #fff;
+}
+
+.container4 .row .col-4 {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container4 .row .col-4 img {
+    width: 270px;
+    height: 380px;
+}
+
+.container4 .row .col-7 {
+    margin-top: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: #cecece;
+}
+
+.container4 .row .col-7 .genre {
+    padding: 0px 0px 10px 0px;
+}
+
+.container4 .row .col-7 .manga {
+    padding: 0px 0px 10px 0px;
+}
+
+.container4 .row .col-7 .manhwa {
+    padding: 0px 0px 10px 0px;
+}
+
+.container4 .row .col-7 .manhua {
+    padding: 0px 0px 10px 0px;
+}
+
+.container4 .row .col-11 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #cecece;
+}
+
+.container4 .row .col-11 .scroll {
+    width: 100%auto;
+    height: 500px;
+    overflow-y: scroll; 
+    border: 1px solid #fff; 
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.container4 .row .col-11 .scroll .ch a {
+    color: #cecece;
+    text-decoration: none;
+}
+
+.container4 .row .col-11 .scroll .ch a:hover,
+.container4 .row .col-11 .scroll .ch a:active {
+    color: #fff;
+}
+.container4 .row .col-11 .scroll .ch p {
+    font-size: 12px;
+}
+.container4 .row .col-11 .scroll .ch {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 60px;
+}
+.container4 .row .col-7 .manga a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #a80250;
+    border-radius: 15px;
+}
+.container4 .row .col-7 .manhua a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #118002;
+    border-radius: 15px;
+}
+.container4 .row .col-7 .manhwa a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #190781;
+    border-radius: 15px;
+}
+/* Halaman Komik #10124903 */
 /* Footer #10124903 */
 
 .footer {
